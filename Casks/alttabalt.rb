@@ -1,8 +1,8 @@
 cask "alttabalt" do
-  version "1.0.4"
-  sha256 "fa9aaa2cbf83461a702c3f13c918d1f9332003179db12143b21a2664df8239b7"
+  version "1.0.5"
+  sha256 "33529f3824487989bcbd0d6460c0a008a9f732115ae7495d762655b8365e149a"
 
-  url "https://github.com/ut0s/homebrew-alttabalt/releases/download/v1.0.4/AltTabAlt-v1.0.4.zip",
+  url "https://github.com/ut0s/homebrew-alttabalt/releases/download/v1.0.5/AltTabAlt-v1.0.5.zip",
       verified: "github.com/ut0s/homebrew-alttabalt/"
   name "AltTabAlt"
   desc "Window switcher with Alt-Tab behavior"
