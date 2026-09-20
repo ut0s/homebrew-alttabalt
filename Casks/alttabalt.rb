@@ -1,6 +1,6 @@
 cask "alttabalt" do
-  version "1.0.12"
-  sha256 "2d2981301030e24a6bfb1264d12aa872c39160ee4d4f06599d6c7cd4e38e73fd"
+  version "1.0.13"
+  sha256 "2e4e35764d1e8fb5332db4c40004744ee7822931568871b4f18d1ad2c88ff6de"
 
   url "https://github.com/ut0s/homebrew-alttabalt/releases/download/v#{version}/AltTabAlt-v#{version}.zip"
   name "AltTabAlt"
