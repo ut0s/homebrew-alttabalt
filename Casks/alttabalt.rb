@@ -1,6 +1,6 @@
 cask "alttabalt" do
-  version "1.0.13"
-  sha256 "2e4e35764d1e8fb5332db4c40004744ee7822931568871b4f18d1ad2c88ff6de"
+  version "1.0.14"
+  sha256 "6c954512f3788f8a57989579369affeb9027813136a16cead1a0c5a457e284b4"
 
   url "https://github.com/ut0s/homebrew-alttabalt/releases/download/v#{version}/AltTabAlt-v#{version}.zip"
   name "AltTabAlt"
@@ -21,6 +21,17 @@ cask "alttabalt" do
   ]
 
   caveats do
+    puts <<~EOS
+      AltTabAlt is ad-hoc signed and is not notarized by Apple. macOS may block
+      the first launch while the downloaded app has a quarantine attribute.
+
+      Verify the installed app before removing quarantine:
+        codesign --verify --deep --strict --verbose=2 /Applications/AltTabAlt.app
+
+      If verification succeeds, remove quarantine and open the app:
+        xattr -dr com.apple.quarantine /Applications/AltTabAlt.app
+        open /Applications/AltTabAlt.app
+    EOS
     unsigned_accessibility
   end
 end
